@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kubernetes Demo Server Status</title>
+    <link rel="stylesheet" type="text/css" href="css/server_status.css">
+    <script type="text/javascript" src="js/checkAlive.js"></script>
+</head>
+<body>
+    <h1>这是我第一个k8s demo的前端项目</h1>
+
+    <h2>实验环境说明</h2>
+    <ol>
+        <li>前端域名为frd.lnmp.example.com，后端域名为api.lnmp.example.com。</li>
+        <li>后端心跳接口为api.lnmp.example.com/check，返回"ok"，表示服务器为存活状态。</li>
+    </ol>
+
+    <h2>后端存活状态</h2>
+    <p>
+        api.lnmp.example.com存活状态：<span id="is_srv_alive">UNKONWN</span>  <button type="button" onclick="checkAlive()">点击检查</button>
+    </p>
+
+</body>
+</html>
